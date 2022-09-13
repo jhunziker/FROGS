@@ -25,4 +25,4 @@ readme.txt: This file that you are currently looking at.
 
 sincinterpol.m: Function that performs sinc-interpolation. Used to reconstruct the subsampled frequency vector of the modeled GPR response in the frequency domain. 
 
-trace_ES.txt: GPR-trace created with the CGFFT code. Used to validate FROGS. 
+trace_ES.txt: GPR-trace created with the semi-analytical code. Used to validate FROGS. 
