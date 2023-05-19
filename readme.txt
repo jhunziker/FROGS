@@ -1,7 +1,7 @@
 The FROGS package contains the following files: 
 -----------------------------------------------
 
-FROGS_Otemma.m: Runs one profile of the example on the Otemma glacier of the paper "Fast 3D ground penetrating radar simulations for glaciers" by J. Hunziker, E.C. Slob and J. Irving, Computers & Geosciences, 2022.
+FROGS_Otemma.m: Runs one profile of the example on the Otemma glacier of the paper "Fast 3D ground penetrating radar simulations for glaciers" by J. Hunziker, E.C. Slob and J. Irving, Computers & Geosciences, Vol. 173, 2023: https://doi.org/10.1016/j.cageo.2023.105320
 
 FROGS_validation.m: Runs the validation example of the above-mentioned paper. 
 
