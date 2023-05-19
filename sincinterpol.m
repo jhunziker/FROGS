@@ -67,7 +67,7 @@ function [fxout dx2] = sincinterpol(dx,fxin,nfac,dotrunc)
 % 
 % When refering to FROGS in any publication, please cite the paper "Fast 3D ground penetrating 
 % radar simulations for glaciers" by J. Hunziker, E.C. Slob and J. Irving, Computers & Geosciences, 
-% 2022 (submitted).
+% Vol. 173, 2023: https://doi.org/10.1016/j.cageo.2023.105320
 
 if nargin<4
     dotrunc = 0;

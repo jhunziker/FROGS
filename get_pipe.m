@@ -38,7 +38,7 @@ function elempos = get_pipe(rad,len,azi,xshift,yshift,depth,ellength,thick,epsr_
 % 
 % When refering to FROGS in any publication, please cite the paper "Fast 3D ground penetrating 
 % radar simulations for glaciers" by J. Hunziker, E.C. Slob and J. Irving, Computers & Geosciences, 
-% 2022 (submitted).
+% Vol. 173, 2023: https://doi.org/10.1016/j.cageo.2023.105320
 
 circ = 2*pi*rad;
 num_of_el = round(circ/ellength);

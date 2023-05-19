@@ -38,7 +38,7 @@ function elempos = get_glacier_bed(xmin,xmax,ymin,ymax,points,ellength,thick,eps
 % 
 % When refering to FROGS in any publication, please cite the paper "Fast 3D ground penetrating 
 % radar simulations for glaciers" by J. Hunziker, E.C. Slob and J. Irving, Computers & Geosciences, 
-% 2022 (submitted).
+% Vol. 173, 2023: https://doi.org/10.1016/j.cageo.2023.105320
 
 xvec = linspace(xmin+ellength/2,xmax-ellength/2,round((xmax-xmin)/ellength));
 yvec = linspace(ymin+ellength/2,ymax-ellength/2,round((ymax-ymin)/ellength));

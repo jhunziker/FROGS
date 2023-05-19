@@ -33,7 +33,7 @@ function [E1,E2,E3] = radiation_pattern(I,dz,eta,n,theta_c,k1,k2,theta,phi,r,dor
 % 
 % When refering to FROGS in any publication, please cite the paper "Fast 3D ground penetrating 
 % radar simulations for glaciers" by J. Hunziker, E.C. Slob and J. Irving, Computers & Geosciences, 
-% 2022 (submitted).
+% Vol. 173, 2023: https://doi.org/10.1016/j.cageo.2023.105320
 
 % Calculate radiation pattern for given angles and distance
 K1 = 1i*I*dz*k1.*eta.*exp(1i*(k1*r))./(2*pi*r); % upper halfspace

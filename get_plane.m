@@ -38,7 +38,7 @@ function elempos = get_plane(xlen,ylen,azi,dip,xshift,yshift,depth,ellength,thic
 % 
 % When refering to FROGS in any publication, please cite the paper "Fast 3D ground penetrating 
 % radar simulations for glaciers" by J. Hunziker, E.C. Slob and J. Irving, Computers & Geosciences, 
-% 2022 (submitted).
+% Vol. 173, 2023: https://doi.org/10.1016/j.cageo.2023.105320
 
 if abs(xlen/ellength-round(xlen/ellength))>1e-6
     error('The length of the plane in x-direction is not an integer multiple of the element length.')

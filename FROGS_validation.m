@@ -14,7 +14,7 @@
 % 
 % When refering to FROGS in any publication, please cite the paper "Fast 3D ground penetrating 
 % radar simulations for glaciers" by J. Hunziker, E.C. Slob and J. Irving, Computers & Geosciences, 
-% 2022 (submitted).
+% Vol. 173, 2023: https://doi.org/10.1016/j.cageo.2023.105320
 
 clear all; close all; clc; tic; 
 
@@ -42,7 +42,7 @@ phi_ant_rec = 165.0/180.0*pi; % Rotation angle of receiver antenna [rad]
 ellength = 0.5; % Length of scattering element [m]
 critdist = 20.0; % Scattering elements need to be within this distance to be considered [m]
 tapw = 10.0; % Width of slope of taper function
-CoreNum = 32; % Amount of CPU's for parallel loop
+CoreNum = 8; % Amount of CPU's for parallel loop
 fs = 9; % Fontsize
 lw = 2; % Linewidth
 
@@ -210,7 +210,11 @@ parfor iel=1:size(elempos,2)
     E_rec = [-1,0,0;0,-1,0;0,0,1]*transz_rec*transy_rec*[Etheta_rec;Ephi_rec;Er_rec];
     E = E_src.*E_rec;
 
-    if elempos(7,iel)>-1e-6 % Reflection coefficient
+    % Reflection
+    if elempos(6,iel)>-1e-6 
+        % If the surface area of the scattering element is negative, it is
+        % treated as a point scatterer. 
+        
         % Rotate the electric field into the coordinate system of the plane of the
         % reflector. As start, a horizontal plane with a normal pointing upward
         % parallel to the z-axis is considered.
